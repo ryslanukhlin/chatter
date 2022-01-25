@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav {
+        @apply flex flex-col;
+    }
+
+    .nav button {
+        @apply mb-2;
+    }
+
+    .nav button:last-of-type {
+        @apply mb-0;
+    }
+
+    .nav-icon {
+        @apply w-[70px] h-[70px] hover:text-sky-500 p-5;
+    }
+
+    .nav-icon-active {
+        @apply bg-gray-200 rounded-lg border-solid;
+    }
+}
